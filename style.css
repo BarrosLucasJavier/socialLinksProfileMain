@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root{
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey: hsl(0, 0%, 20%);
+    --darkGrey: hsl(0, 0%, 12%);
+    --OffBlack: hsl(0, 0%, 8%);
+}
+
+/* ----- Reset ----- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: "Inter", sans-serif;
+}
+
+body{
+    background-color: var(--OffBlack);
+    color: var(--white);
+    min-height: 100dvh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* ----- Social Card ----- */
+
+.socialContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1.8rem;
+    background-color: var(--darkGrey);
+    width: 327.6px;
+    height: 584px;
+    margin: auto;
+    border-radius: 8px;
+}
+.socialContainer img{
+    width: 90.8px;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
+}
+.socialContainer h1{
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.1rem;
+}
+.socialLocation{
+    color: var(--green);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.socialProfession{
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+.socialLinksContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2rem;
+    width: 100%;
+    text-align: center;
+}
+.socialLink{
+    padding: 1rem 0.7rem;
+    background-color: var(--grey);
+    font-weight: 600;
+    border-radius: 8px;
+}
+.socialLink:hover{
+    background-color: var(--green);
+    color: var(--darkGrey);
+}
+
+/* ----- Media Queries ----- */
+
+@media screen and (min-width:768px) {
+    .socialContainer{
+        padding: 2.5rem;
+        width: 380px;
+        height: 610px;
+    }
+}
